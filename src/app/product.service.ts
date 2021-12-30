@@ -27,4 +27,11 @@ export class ProductService {
   createNewProduct(product: Product){
     this.products.push(product);
   }
+
+  getProductById(id:number){
+    for (let i = 0; i < this.products.length; i++) {
+      if (this.products[i].id == id) return this.products[i];
+    }
+    return null;
+  }
 }

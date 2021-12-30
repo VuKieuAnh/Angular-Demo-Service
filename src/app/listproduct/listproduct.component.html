@@ -10,5 +10,6 @@
   <tr *ngFor="let p of getAllProduct()">
     <td>{{p.name}}</td>
     <td>{{p.description}}</td>
+    <td><a routerLink="product/{{p.id}}">Chi tiet</a></td>
   </tr>
 </table>
